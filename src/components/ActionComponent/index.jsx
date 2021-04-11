@@ -69,7 +69,7 @@ function Actions() {
       {/* <button className="btn_actions" onClick={() => handleClick()} style={{ marginBottom: 70 }}>Click</button> */}
 
       <div className="slider-container">
-        <input type="range" min="0" max="100" name="sliderId" id="sliderId" className="slider" value="0"
+        <input type="range" min="0" max="100" name="sliderId" id="sliderId" className="slider" 
         onChange={(e)=>handleSliderChange(e)}
         onMouseEnter={() => setLoading(true)}
         onMouseLeave={() => setLoading(false)}
