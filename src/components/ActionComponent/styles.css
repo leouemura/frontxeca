@@ -136,7 +136,7 @@ input[type=text] {
   color: #595959;
   font-size: 18px;
   font-size: 600;
-  background: linear-gradient(90deg,  #202021 60%,  #33333d 100%);
+  background: linear-gradient(90deg,  #202021 60%,  #272829 100%);
   border: none;
   outline: none;
   cursor: pointer;
@@ -154,9 +154,13 @@ input[type=text] {
 .slider::-webkit-slider-thumb{
   text-decoration: none;
   appearance: none;
-  height: 100px;
-  width: 100px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
   cursor:pointer;
+  background: #202021;
+  box-shadow: 2px 2px 5px #131415, -4px -3px 6px #282828aa;
+  border: none;
 }
 
 .slider::-moz-range-thumb{

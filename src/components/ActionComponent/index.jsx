@@ -21,7 +21,7 @@ function Actions() {
     //pass the background color to the slider component
     // let color =  "linear-gradient(90deg,  #202021 "+ slider_value +"%, #33333d 100%)"
     const sliderInput = event.target
-    let color =  "linear-gradient(90deg,  #202021 "+ slider_value +"%, #33333d 100%)"
+    let color =  "linear-gradient(90deg,  #202021 "+ slider_value +"%, #272829 100%)"
     sliderInput.style.background = color
     
     //change the action-container width based on 0~100
