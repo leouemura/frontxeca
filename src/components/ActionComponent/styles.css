@@ -1,4 +1,4 @@
-.btn_actions {
+/* .btn_actions {
   margin: 15px 0;
   width: 100%;
   height: 50px;
@@ -16,7 +16,7 @@
 .btn_actions:focus {
   color: #db3734;
   box-shadow: inset 2px 2px 5px #131415, inset -5px -5px 10px #26262673;
-}
+} */
 
 .container{
   margin: 0px;
@@ -73,15 +73,11 @@
 }
 
 .fire {
-  /* display: none; */
   margin-top: -460px;
   margin-left: 325px;
   padding: 0px;
 }
-/* .input_hour, .input_minute{
-  width: 10px;
-  min-height: 0px;
-} */
+
 
 input[type=number] {
   -moz-appearance: textfield;

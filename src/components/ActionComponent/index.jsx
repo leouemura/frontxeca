@@ -5,21 +5,18 @@ import './styles.css';
 
 function Actions() {
   const [loading, setLoading] = React.useState(false)
-  const [loading2, setLoading2] = React.useState(false)
 
-  const handleClick = () => {
-    setLoading(true)
-    setLoading(false)
-  }
+  // const handleClick = () => {
+  //   setLoading(true)
+  //   setLoading(false)
+  // }
 
   const handleSliderChange = (event) =>{
     
     const slider_value = event.target.value
-    // const sliderInputComponent = event.target
-    console.log(event.target) 
+    // console.log(event.target) 
     
     //pass the background color to the slider component
-    // let color =  "linear-gradient(90deg,  #202021 "+ slider_value +"%, #33333d 100%)"
     const sliderInput = event.target
     let color =  "linear-gradient(90deg,  #202021 "+ slider_value +"%, #272829 100%)"
     sliderInput.style.background = color
@@ -71,38 +68,8 @@ function Actions() {
 
       {/* <button className="btn_actions" onClick={() => handleClick()} style={{ marginBottom: 70 }}>Click</button> */}
 
-      {/* <div className="action-container"
-        onMouseEnter={() => setLoading2(true)}
-        onMouseLeave={() => setLoading2(false)}>
-        <div className="card-container1">
-        </div>
-        <div className="card-container2">
-        </div>
-        <div className="card-container3">
-        </div>
-        <div className="card-container4">
-        </div>
-        <div className="papelito">
-          <div>
-            <input type="text" name="input_topic" className="input_topic" value={"PAPELITO"} />
-          </div>
-          <div>
-            <input type="number" className="input_hour" value="04" />:
-            <input type="number" className="input_minute" value="21" />
-            <div className="underline">
-              <div className="line"></div>
-              <div className="line"></div>
-            </div>
-          </div>
-        </div>
-        <div className="fire">
-          <Spin spinning={loading2} />
-        </div>
-      </div>
-      <button className="btn_actions" onClick={() => handleClick()} style={{ marginBottom: 70 }}>Click</button> */}
-
       <div className="slider-container">
-        <input type="range" min="0" max="100" name="sliderId" id="sliderId" className="slider" 
+        <input type="range" min="0" max="100" name="sliderId" id="sliderId" className="slider" value="0"
         onChange={(e)=>handleSliderChange(e)}
         onMouseEnter={() => setLoading(true)}
         onMouseLeave={() => setLoading(false)}
