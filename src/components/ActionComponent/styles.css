@@ -62,6 +62,13 @@
   background-color: #c4aba5;
 }
 
+.card-container1:hover~.fire,
+.card-container2:hover~.fire,
+.card-container3:hover~.fire,
+.card-container4:hover~.fire{
+  display: block
+}
+
 .papelito {
   margin-top: 0.1rem;
   height: 3.4rem;
@@ -125,19 +132,21 @@ input[type=text] {
 
 .slider{
   -webkit-appearance: none;
-  margin: 15px 0;
-  width: 100%;
+  position: absolute;
+  margin: -56px -140px;
+  width: 430px;
   height: 50px;
   color: #595959;
   font-size: 18px;
   font-size: 600;
-  background: linear-gradient(90deg,  #202021 60%,  #272829 100%);
+  /* background: linear-gradient(90deg,  #202021 60%,  #272829 100%); */
+  background: linear-gradient(90deg,  #20202100 60%,  #27282900 100%);
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 25px;
   /* box-shadow: 2px 2px 5px #131415, -5px -5px 10px #26262673; */
-  box-shadow: inset -5px -5px 10px #131415, inset 2px 2px 5px #26262673;
+  box-shadow: inset -5px -5px 10px #13141500, inset 2px 2px 5px #26262600;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   transform: rotate(180deg);
@@ -154,8 +163,8 @@ input[type=text] {
   width: 45px;
   border-radius: 50%;
   cursor:pointer;
-  background: #202021;
-  box-shadow: 2px 2px 5px #131415, -4px -3px 6px #282828aa;
+  background: #20202100;
+  box-shadow: 2px 2px 5px #13141500, -4px -3px 6px #28282800;
   border: none;
 }
 
@@ -166,7 +175,7 @@ input[type=text] {
   width: 45px;
   border-radius: 50%;
   cursor:pointer;
-  background: #202021;
-  box-shadow: 2px 2px 5px #131415, -4px -3px 6px #282828aa;
+  background: #20202100;
+  box-shadow: 2px 2px 5px #13141500, -4px -3px 6px #28282800;
   border: none;
 }

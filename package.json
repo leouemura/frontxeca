@@ -11,6 +11,7 @@
     "lottie-web": "^5.7.8",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-lottie": "^1.2.3",

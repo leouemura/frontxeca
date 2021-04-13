@@ -39,6 +39,7 @@ function Actions() {
   }
 
   const handleSliderChange = (event) => {
+    setLoading(true)
     if (sliderState === false) {
       const slider_value = event.target.value
       // console.log(event.target) 
@@ -47,7 +48,7 @@ function Actions() {
 
       //pass the background color to the slider component
       const sliderInput = event.target
-      let color = "linear-gradient(90deg,  #202021 " + slider_value + "%, #272829 100%)"
+      let color = "linear-gradient(90deg,  #20202100 " + slider_value + "%, #27282900 100%)"
       sliderInput.style.background = color
 
       //change the action-container width based on 0~100
@@ -69,7 +70,7 @@ function Actions() {
         setInputSlider(slider_value)
         //pass the background color to the slider component
         const sliderInput = event.target
-        let color = "linear-gradient(90deg,  #202021 " + slider_value + "%, #272829 100%)"
+        let color = "linear-gradient(90deg,  #20202100 " + slider_value + "%, #27282900 100%)"
         sliderInput.style.background = color
 
         //change the action-container width based on 0~100
@@ -98,7 +99,7 @@ function Actions() {
 
     //pass the background color to the slider component
     const sliderInput = event.target
-    let color = "linear-gradient(90deg,  #202021 " + slider_value + "%, #272829 100%)"
+    let color = "linear-gradient(90deg,  #20202100 " + slider_value + "%, #27282900 100%)"
     sliderInput.style.background = color
 
     //change the action-container width based on 0~100
@@ -155,7 +156,7 @@ function Actions() {
       <div className="slider-container">
         <input type="range" min="0" max="100" name="sliderId" id="sliderId" className="slider" value={inputSlider}
           onChange={(e) => handleSliderChange(e)}
-          onMouseEnter={() => setLoading(true)}
+          // onMouseEnter={() => setLoading(true)}
           onMouseLeave={() => setLoading(false)}
           onMouseUp={(e) => handleResetSlider(e)}
         />
