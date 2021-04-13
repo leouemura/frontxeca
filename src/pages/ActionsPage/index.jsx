@@ -1,5 +1,4 @@
 import React from 'react';
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import Actions from '../../components/ActionComponent'
 import './styles.css';
 
