@@ -84,9 +84,8 @@ input[type=number] {
   appearance: textfield;
   margin: 0;
 }
-
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   margin: 0;
 }
 
@@ -138,9 +137,10 @@ input[type=text] {
   cursor: pointer;
   border-radius: 25px;
   /* box-shadow: 2px 2px 5px #131415, -5px -5px 10px #26262673; */
-  box-shadow: inset 2px 2px 5px #131415, inset -5px -5px 10px #26262673;
+  box-shadow: inset -5px -5px 10px #131415, inset 2px 2px 5px #26262673;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  transform: rotate(180deg);
 }
 
 .slider:hover{

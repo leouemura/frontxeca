@@ -1,3 +1,24 @@
 .block{
   margin-bottom: 120px;
 }
+
+.container-list-card{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /* margin-top: 100px; */
+  /* width: 850px;
+  height: 550px; */
+  padding: 3rem;
+  padding-right: 6.5rem;
+  padding-bottom: 2.5rem;
+  box-shadow: 12px 12px 8px #131415, -5px -5px 4px #26262673;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin-bottom: 1.5rem;
+}
